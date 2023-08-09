@@ -1,0 +1,12 @@
+JavaScript:
+function countBy(x, n) {
+  let z = [];
+  let y = 1;
+  while(z.length < n){
+    z.push(x * y)
+    y++;
+    
+  }
+
+  return z;
+}
