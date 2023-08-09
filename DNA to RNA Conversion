@@ -1,0 +1,23 @@
+JavaScript:
+
+function DNAtoRNA(dna) {
+  // create a function which returns an RNA sequence from the given DNA sequence
+ let splitDna = dna.split('');
+  let counter = 0;
+  //iterate through splitDna
+  for(x of splitDna){
+    //find each 'T'
+    if(splitDna[counter] == 'T'){
+      //replace with 'U'
+      splitDna.splice(counter, 1, 'U');
+      counter++;
+      console.log(splitDna);
+      } else {
+        counter++
+      }
+    }
+    //turn splitDna from array back into a string
+    return splitDna.join('');
+    console.log(splitDna);
+}  
+  
