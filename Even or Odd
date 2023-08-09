@@ -1,0 +1,8 @@
+Python:
+def even_or_odd(number):
+    boo = (number % 2)
+    if boo == 0:
+        return("Even")
+        
+    if boo == 1:
+        return("Odd")
