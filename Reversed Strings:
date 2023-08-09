@@ -1,0 +1,7 @@
+JavaScript:
+function solution(str){
+  let stringArray = str.split('');
+  let newStringArray = stringArray.reverse();
+  return newStringArray.join('');
+  
+}
