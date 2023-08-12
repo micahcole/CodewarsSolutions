@@ -1,0 +1,23 @@
+JavaScript:
+function toCamelCase(str){
+  //first, I need to check if the string hasa '-' or a '_'
+  str = str.replace(/-/g, " ");
+  str = str.replace(/_/g, " ");
+  
+//interate through the words in the array
+  let array = str.split(' ');
+  
+let newArray = array.map(word => {
+  if(word != array[0]){
+    let firstLetter = word.charAt(0).toUpperCase();
+    let otherLetters = word.slice(1);
+  
+    return firstLetter + otherLetters}
+else{
+  return array[0];
+}}
+    );
+    
+  console.log(newArray);
+return newArray.join('');
+    }
