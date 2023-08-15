@@ -1,0 +1,10 @@
+JavaScript:
+function domainName(url){
+  // split url into an array that is seperated by "." and "http://" or "https://"
+  url = url.split(".").join(" ");
+  url = url.replace("http://", "").replace("https://", "").replace("www", "");
+   console.log(url);
+  let domain = url.trim().split(" ");
+  console.log(domain[0]);
+  return domain[0];
+}
