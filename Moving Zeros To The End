@@ -1,0 +1,6 @@
+JavaScript:
+function moveZeros(arr) {
+  const zeros = arr.filter(numbers => numbers !== 0)
+  const nonZeros = arr.filter(numbers => numbers === 0)
+  return zeros.concat(nonZeros);
+}
